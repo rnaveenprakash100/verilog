@@ -3,7 +3,6 @@ input din[3:0],
 input [1:0]sel,
 output reg [3:0] y
 );
-
 always @(*) begin
     case(sel)
         2'b00:y=din[0];
