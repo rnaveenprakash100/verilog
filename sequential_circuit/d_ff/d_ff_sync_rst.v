@@ -1,14 +1,12 @@
 module d_ff(
-input clk,
-input rst,
-input d,
+input clk,rst,d,
 output reg q
 );
 always@(posedge clk)
 begin
-if(rst)
-q<=0;
-else
-q<=d;
+  case(rst) 
+      1'b0:q<=d;
+      1'b1:q<=0;
+  endcase
 end
 endmodule
