@@ -1,8 +1,5 @@
 module jk_ff(
-input clk,
-input rst,
-input j,
-input k,
+input clk,rst,j,k,
 output reg q
 );
 always@(posedge clk or posedge rst)
