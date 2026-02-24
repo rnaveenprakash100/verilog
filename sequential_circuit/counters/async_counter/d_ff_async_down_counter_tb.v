@@ -19,7 +19,7 @@ module tb;
 
   initial begin
     $monitor("time=%0t clk=%b rst=%b q=%b",$time,clk,rst,q);
-    $dumpfile("down_counter.vcd");
+    $dumpfile("d_ff_async_down_counter.vcd");
     $dumpvars(0,tb);
   end
 endmodule
