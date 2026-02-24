@@ -14,7 +14,7 @@ end
 endmodule
 
 
-module jk_sync_counter(input clk,rst,output[3:0]q);
+module jk_sync_up_counter(input clk,rst,output[3:0]q);
 wire q0,q1,q2,q3;
 
 jk_ff ff0(.clk(clk),.rst(rst),.j(1'b1),.k(1'b1),.q(q0));
