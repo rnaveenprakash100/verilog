@@ -1,3 +1,5 @@
+//1001 sequence dedector overlapping
+
 module fsm_moore(input clk,rst,x,output reg y);
 localparam S0=3'b000,S1=3'b001,S2=3'b010,S3=3'b011,S4=3'b100;
 reg[2:0]state,next_state;
