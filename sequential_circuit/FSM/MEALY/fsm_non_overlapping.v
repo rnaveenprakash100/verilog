@@ -1,3 +1,5 @@
+//1001 non_overlapping
+
 module fsm_mealy(input clk,rst,x,output reg y);
 localparam S0=2'b00,S1=2'b01,S2=2'b10,S3=2'b11;
 reg[1:0]state,next_state;
