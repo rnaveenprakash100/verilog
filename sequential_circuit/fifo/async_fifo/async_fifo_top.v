@@ -1,7 +1,7 @@
 `include "synchroniser.v"
 `include "rptr_handler.v"
 `include "wptr_handler.v"
-`include "fifo.v"
+`include "async_fifo.v"
 
 module async_fifo_topmodule#(parameter width=8,
  parameter depth=8,
